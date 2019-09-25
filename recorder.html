@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recorder</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/recorder.css">
+</head>
+<body>
+    
+    <div id="side">
+        <audio id="audio_play1" src="sound/sound1.mp3"></audio>
+        <audio id="audio_play2" src="sound/sound2.mp3"></audio>
+        <audio id="audio_play3" src="sound/sound3.mp3"></audio>
+        <audio id="audio_play4" src="sound/sound4.mp3"></audio>
+        <audio id="audio_play5" src="sound/sound5.mp3"></audio>
+        <audio id="audio_play6" src="sound/sound6.mp3"></audio>
+        <audio id="audio_play7" src="sound/sound7.mp3"></audio>
+        <audio id="audio_play8" src="sound/sound8.mp3"></audio>
+    </div>
+
+    <div id="info"> 
+        <p>도: <span>A a</span></p>
+        <p>레: <span>S s</span></p>
+        <p>미: <span>D d</span></p>
+        <p>파: <span>F f</span></p>
+        <p>솔: <span>J j</span></p>
+        <p>라: <span>K k</span></p>
+        <p>시: <span>L l</span></p>
+        <p>높은 도: <span>: ;</span></p>
+    </div>
+
+    <div id="recorder">
+        <div id="wrap">
+            <!-- do -->
+            <div id="hole"> 
+                <div id="mainHole">
+                    <div class="holes"></div>
+                    <div class="holes"></div>
+                    <div class="holes"></div>
+                    <div class="holes"></div>
+                    <div class="holes"></div>
+                    <div class="holes"></div>
+                    <div class="holes"></div>
+                </div>
+                <div id="subHole"><div class="holes"></div></div>
+            </div>
+            <div id="sound">
+                <div><div></div></div>
+            </div>
+            <div id="head">
+                <div><div></div></div>
+            </div>
+        </div>
+        <p id="lastTyping">준비</p>
+    </div>
+
+    <script type="text/javascript" src="js/recorder.js"></script>
+</body>
+</html>
