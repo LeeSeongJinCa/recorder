@@ -1,58 +1,3 @@
-.do .holes {
-    background-color: red !important;
-}
-.re .holes {
-    background-color: red;
-}
-.re > #mainHole > .holes:nth-child(1) {
-    background-color: #7b3624 !important;
-}
-.mi .holes {
-    background-color: red;
-}
-.mi #mainHole .holes:nth-child(1),
-.mi #mainHole .holes:nth-child(2) {
-    background-color: #7b3624 !important;
-}
-.fa .holes {
-    background-color: red;
-}
-.fa #mainHole .holes:nth-child(1),
-.fa #mainHole .holes:nth-child(2),
-.fa #mainHole .holes:nth-child(3) {
-    background-color: #7b3624 !important;
-}
-.so .holes {
-    background-color: red;
-}
-.so #mainHole .holes:nth-child(1),
-.so #mainHole .holes:nth-child(2),
-.so #mainHole .holes:nth-child(3),
-.so #mainHole .holes:nth-child(4) {
-    background-color: #7b3624 !important;
-}
-.la .holes {
-    background-color: #7b3624;
-}
-.la #subHole .holes,
-.la #mainHole .holes:nth-child(7),
-.la #mainHole .holes:nth-child(6) {
-    background-color: red !important;
-}
-.ti .holes {
-    background-color: #7b3624;
-}
-.ti #subHole .holes,
-.ti #mainHole .holes:nth-child(7) {
-    background-color: red !important;
-}
-.doo .holes {
-    background-color: #7b3624;
-}
-.doo #subHole .holes,
-.doo #mainHole .holes:nth-child(6) {
-    background-color: red !important;
-}
 #side {
     text-align: center;
     padding: 10px;
@@ -64,10 +9,7 @@
 }
 #info {
     display: flex;
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
+    justify-content: center;
 }
 #info > p {
     margin: 0 20px;
@@ -76,7 +18,8 @@
     display: inline-block;
     font-size: 25px;
 }
-#recorder {
+
+/* #recorder {
     height: 100vh;
 }
 #wrap {
@@ -202,6 +145,151 @@
     border: 3px solid black;
     border-radius: 50%;
 }
+.do .holes {
+    background-color: red !important;
+}
+.re .holes {
+    background-color: red;
+}
+.re > #mainHole > .holes:nth-child(1) {
+    background-color: #7b3624 !important;
+}
+.mi .holes {
+    background-color: red;
+}
+.mi #mainHole .holes:nth-child(1),
+.mi #mainHole .holes:nth-child(2) {
+    background-color: #7b3624 !important;
+}
+.fa .holes {
+    background-color: red;
+}
+.fa #mainHole .holes:nth-child(1),
+.fa #mainHole .holes:nth-child(2),
+.fa #mainHole .holes:nth-child(3) {
+    background-color: #7b3624 !important;
+}
+.so .holes {
+    background-color: red;
+}
+.so #mainHole .holes:nth-child(1),
+.so #mainHole .holes:nth-child(2),
+.so #mainHole .holes:nth-child(3),
+.so #mainHole .holes:nth-child(4) {
+    background-color: #7b3624 !important;
+}
+.la .holes {
+    background-color: #7b3624;
+}
+.la #subHole .holes,
+.la #mainHole .holes:nth-child(7),
+.la #mainHole .holes:nth-child(6) {
+    background-color: red !important;
+}
+.ti .holes {
+    background-color: #7b3624;
+}
+.ti #subHole .holes,
+.ti #mainHole .holes:nth-child(7) {
+    background-color: red !important;
+}
+.doo .holes {
+    background-color: #7b3624;
+}
+.doo #subHole .holes,
+.doo #mainHole .holes:nth-child(6) {
+    background-color: red !important;
+}
+.holesButton {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+} */
 
+body {
+    width: 1300px;
+    margin: 0 auto;
+}
 
+#recorderImage {
+    width: 1300px;
+    z-index: -1;
+}
+#mainHole {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+#source {
+    font-size: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.holesButton {
+    width: 40px;
+    height: 40px;
+}
 
+.do .holes {
+    background-color: red !important;
+}
+.re .holes {
+    background-color: red;
+}
+.re > #mainHole > .holes:nth-child(1) {
+    background-color: #7b3624 !important;
+}
+.mi .holes {
+    background-color: red;
+}
+.mi #mainHole .holes:nth-child(1),
+.mi #mainHole .holes:nth-child(2) {
+    background-color: #7b3624 !important;
+}
+.fa .holes {
+    background-color: red;
+}
+.fa #mainHole .holes:nth-child(1),
+.fa #mainHole .holes:nth-child(2),
+.fa #mainHole .holes:nth-child(3) {
+    background-color: #7b3624 !important;
+}
+.so .holes {
+    background-color: red;
+}
+.so #mainHole .holes:nth-child(1),
+.so #mainHole .holes:nth-child(2),
+.so #mainHole .holes:nth-child(3),
+.so #mainHole .holes:nth-child(4) {
+    background-color: #7b3624 !important;
+}
+.la .holes {
+    background-color: #7b3624;
+}
+.la #subHole .holes,
+.la #mainHole .holes:nth-child(7),
+.la #mainHole .holes:nth-child(6) {
+    background-color: red !important;
+}
+.ti .holes {
+    background-color: #7b3624;
+}
+.ti #subHole .holes,
+.ti #mainHole .holes:nth-child(7) {
+    background-color: red !important;
+}
+.doo .holes {
+    background-color: #7b3624;
+}
+.doo #subHole .holes,
+.doo #mainHole .holes:nth-child(6) {
+    background-color: red !important;
+}

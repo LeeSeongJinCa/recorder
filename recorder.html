@@ -7,7 +7,6 @@
     <title>Recorder</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/recorder.css">
-    <script src="path/to/build/wad.min.js"></script>
 </head>
 <body>
     
@@ -33,7 +32,7 @@
         <p>높은 도: <span>: ;</span></p>
     </div>
 
-    <div id="recorder">
+    <!-- <div id="recorder">
         <div id="wrap">
             <div id="hole"> 
                 <div id="mainHole">
@@ -55,8 +54,23 @@
             </div>
         </div>
         <p id="lastTyping">준비</p>
-    </div>
+    </div> -->
 
+    <div id="recorder">
+        <img id="recorderImage" src="img/recorder.jpg" alt="recorder">
+        <div id="mainHole">
+            <div class="holes"><button class="holesButton">Do</button></div>
+            <div class="holes"><button class="holesButton">Re</button></div>
+            <div class="holes"><button class="holesButton">Mi</button></div>
+            <div class="holes"><button class="holesButton">Fa</button></div>
+            <div class="holes"><button class="holesButton">So</button></div>
+            <div class="holes"><button class="holesButton">La</button></div>
+            <div class="holes"><button class="holesButton">Ti</button></div>
+            <div class="holes"><button class="holesButton">Doo</button></div>
+        </div>
+    </div>
+    <p id="lastTyping">준비</p>
+    <p id="source">리코더 출처: http://recorderkorea.com/shop/goods/goods_view.php?&goodsno=981</p>
     <script type="text/javascript" src="js/recorder.js"></script>
 </body>
 </html>
