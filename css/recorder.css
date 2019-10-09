@@ -18,7 +18,6 @@
     display: inline-block;
     font-size: 25px;
 }
-
 /* #recorder {
     height: 100vh;
 }
@@ -215,17 +214,12 @@ body {
     margin: 0 auto;
 }
 
+#recorder {
+    position: relative;
+}
 #recorderImage {
     width: 1300px;
     z-index: -1;
-}
-#mainHole {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 500px;
-    margin: 0 auto;
-    border: 1px solid red;
 }
 #source {
     font-size: 5px;
@@ -233,63 +227,79 @@ body {
     bottom: 0;
     left: 0;
 }
+#mainHole {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+}
+.holes {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
 .holesButton {
     width: 40px;
     height: 40px;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
-
-.do .holes {
+.do .holes button {
     background-color: red !important;
 }
-.re .holes {
+.re .holes button {
     background-color: red;
 }
-.re > #mainHole > .holes:nth-child(1) {
-    background-color: #7b3624 !important;
+.re .holes:nth-child(1) button {
+    background-color: #dddddd !important;
 }
-.mi .holes {
+.mi .holes button {
     background-color: red;
 }
-.mi #mainHole .holes:nth-child(1),
-.mi #mainHole .holes:nth-child(2) {
-    background-color: #7b3624 !important;
+.mi .holes:nth-child(1) button,
+.mi .holes:nth-child(2) button {
+    background-color: #dddddd !important;
 }
-.fa .holes {
+.fa .holes button {
     background-color: red;
 }
-.fa #mainHole .holes:nth-child(1),
-.fa #mainHole .holes:nth-child(2),
-.fa #mainHole .holes:nth-child(3) {
-    background-color: #7b3624 !important;
+.fa .holes:nth-child(1) button,
+.fa .holes:nth-child(2) button,
+.fa .holes:nth-child(3) button {
+    background-color: #dddddd !important;
 }
-.so .holes {
+.so .holes button {
     background-color: red;
 }
-.so #mainHole .holes:nth-child(1),
-.so #mainHole .holes:nth-child(2),
-.so #mainHole .holes:nth-child(3),
-.so #mainHole .holes:nth-child(4) {
-    background-color: #7b3624 !important;
+.so .holes:nth-child(1) button,
+.so .holes:nth-child(2) button,
+.so .holes:nth-child(3) button,
+.so .holes:nth-child(4) button {
+    background-color: #dddddd !important;
 }
-.la .holes {
-    background-color: #7b3624;
+.la .holes button {
+    background-color: #dddddd;
 }
-.la #subHole .holes,
-.la #mainHole .holes:nth-child(7),
-.la #mainHole .holes:nth-child(6) {
+.la .holes:nth-child(8) button,
+.la .holes:nth-child(7) button,
+.la .holes:nth-child(6) button {
     background-color: red !important;
 }
-.ti .holes {
-    background-color: #7b3624;
+.ti .holes button {
+    background-color: #dddddd;
 }
-.ti #subHole .holes,
-.ti #mainHole .holes:nth-child(7) {
+.ti .holes:nth-child(8) button,
+.ti .holes:nth-child(7) button {
     background-color: red !important;
 }
-.doo .holes {
-    background-color: #7b3624;
+.doo .holes button {
+    background-color: #dddddd;
 }
-.doo #subHole .holes,
-.doo #mainHole .holes:nth-child(6) {
+.la .holes:nth-child(8) button,
+.doo .holes:nth-child(6) button {
     background-color: red !important;
 }
