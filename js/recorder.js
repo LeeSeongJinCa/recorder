@@ -1,39 +1,22 @@
 // * soundPlays
 const audio = new Audio();
 
-// function plays(n) {
-//     audioPause();
-//     audioPlay(n);
-// }
-// function audioPause() {
-//     const audioTag = document.querySelectorAll(".audio");
-//     const audioArray = Array.from(audioTag);
-//     audioArray.forEach(el => {
-//         el.pause();
-//         el.currentTime = 0;
-//     });
-// }
 function audioPlay(n) {
     audio.src = `sound/sound${n}.mp3`;
     audio.oncanplaythrough = () => {
         audio.play();
     }
 }
-function hole(num) {
+function getIndexOfHole(num) {
     const holeValue = document.querySelectorAll('.holes');
-    return [holeValue[num - 1]];
+    return holeValue[num - 1];
 }
-// function changeToRed(tag, sound) {
-//     tag.classList = sound;
-// }
-// function changeToOrginal(tag) {
-//     tag.classList = "";
-// }
-function changeHolesColor(tag, sound, bool) {
-    if(bool) {
-        tag.classList = sound;
+function changeHolesColor(tag, sound, changeColor) {
+    let parentTag = tag.parentNode;
+    if(changeColor) {
+        parentTag.classList = sound;
     } else {
-        tag.classList = "";
+        parentTag.classList = "";
     }
 }
 function lastTyping(text) {
@@ -42,13 +25,12 @@ function lastTyping(text) {
 }
 function playSound(value, sound) {
     audioPlay(value);
-    // hole(value).map((el) => changeToRed(el.parentNode, sound));
-    hole(value).map((el) => changeHolesColor(el.parentNode, sound, true));
+    const hole = getIndexOfHole(value);
+    changeHolesColor(hole, sound, true);
     lastTyping(sound);
 }
 function stopSound(value, sound) {
-    // hole(value).map((el) => changeToOrginal(el.parentNode));
-    hole(value).map((el) => changeHolesColor(el.parentNode, sound, false));
+    changeHolesColor(getIndexOfHole(value), sound, false);
 }
 document.body.onkeydown = () => {
     const key = window.event.keyCode;
