@@ -1,15 +1,11 @@
-#side {
-    text-align: center;
-    padding: 10px;
-}
-#lastTyping {
-    text-align: center;
-    padding-top: 50px;
-    font-size: 25px;
+body {
+    width: 1300px;
+    margin: 0 auto;
 }
 #info {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 #info > p {
     margin: 0 20px;
@@ -18,202 +14,6 @@
     display: inline-block;
     font-size: 25px;
 }
-/* #recorder {
-    height: 100vh;
-}
-#wrap {
-    display: flex;
-    justify-content: space-between;
-    flex: 1 1 auto;
-    margin: 300px auto 0;
-    width: 1000px;
-    height: 20%;
-}
-#head {
-    width: 20%;
-}
-#head > div {
-    position: relative;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 120px;
-    height: 70px;
-    border: 3px solid black;
-    border-radius: 0 15px 15px 0;
-    background-color: #efd49d;
-}
-#head > div > div {
-    position: absolute;
-    right: -3px;
-    top: -3px;
-    width: 100px;
-    height: 70px;
-    border: 3px solid black;
-    border-radius: 15px;
-}
-#sound {
-    position: relative;
-    top: 50%;
-    right: -3px;
-    transform: translateY(-50%);
-    width: 15%;
-    height: 40px;
-    border: 3px solid black;
-    background-color: #efd49d;
-}
-#sound > div {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -3px;
-    width: 40px;
-    height: 25px;
-    border: 3px solid black;
-    border-radius: 5px 0 0 5px;
-}
-#sound > div > div {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    width: 5px;
-    height: 100%;
-    background-color: #000;
-}
-#hole {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -6px;
-    width: 65%;
-    border: 3px solid black;
-    border-radius: 15px;
-    height: 80px;
-    background-color: #7b3624;
-}
-#mainHole {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-.holes {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 3px solid black;
-}
-.two {
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px;
-    height: 10px;
-    border: 3px solid black;
-    border-radius: 50%;
-}
-.first {
-    border: 3px solid red;
-    background-color: red;
-}
-.second {
-    border: 3px solid red;
-    background-color: red;
-}
-#subHole {
-    position: absolute !important;
-    right: 32px !important;
-    bottom: -46px !important;
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 80px;
-    height: 40px;
-    background-color: #7b3624;
-}
-#subHole > div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    border: 3px solid black;
-    border-radius: 50%;
-}
-.do .holes {
-    background-color: red !important;
-}
-.re .holes {
-    background-color: red;
-}
-.re > #mainHole > .holes:nth-child(1) {
-    background-color: #7b3624 !important;
-}
-.mi .holes {
-    background-color: red;
-}
-.mi #mainHole .holes:nth-child(1),
-.mi #mainHole .holes:nth-child(2) {
-    background-color: #7b3624 !important;
-}
-.fa .holes {
-    background-color: red;
-}
-.fa #mainHole .holes:nth-child(1),
-.fa #mainHole .holes:nth-child(2),
-.fa #mainHole .holes:nth-child(3) {
-    background-color: #7b3624 !important;
-}
-.so .holes {
-    background-color: red;
-}
-.so #mainHole .holes:nth-child(1),
-.so #mainHole .holes:nth-child(2),
-.so #mainHole .holes:nth-child(3),
-.so #mainHole .holes:nth-child(4) {
-    background-color: #7b3624 !important;
-}
-.la .holes {
-    background-color: #7b3624;
-}
-.la #subHole .holes,
-.la #mainHole .holes:nth-child(7),
-.la #mainHole .holes:nth-child(6) {
-    background-color: red !important;
-}
-.ti .holes {
-    background-color: #7b3624;
-}
-.ti #subHole .holes,
-.ti #mainHole .holes:nth-child(7) {
-    background-color: red !important;
-}
-.doo .holes {
-    background-color: #7b3624;
-}
-.doo #subHole .holes,
-.doo #mainHole .holes:nth-child(6) {
-    background-color: red !important;
-}
-.holesButton {
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-} */
-
-body {
-    width: 1300px;
-    margin: 0 auto;
-}
-
 #recorder {
     position: relative;
 }
@@ -226,6 +26,11 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+#lastTyping {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 25px;
 }
 #mainHole {
     display: flex;
@@ -295,9 +100,6 @@ body {
 .ti .holes:nth-child(8) button,
 .ti .holes:nth-child(7) button {
     background-color: red !important;
-}
-.doo .holes button {
-    background-color: #dddddd;
 }
 .la .holes:nth-child(8) button,
 .doo .holes:nth-child(6) button {
