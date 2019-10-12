@@ -1,5 +1,6 @@
 // * soundPlays
 const audio = new Audio();
+const lastType = document.getElementById('lastTyping');
 
 function audioPlay(n) {
     audio.src = `sound/sound${n}.mp3`;
@@ -8,29 +9,26 @@ function audioPlay(n) {
     }
 }
 function getIndexOfHole(num) {
-    const holeValue = document.querySelectorAll('.holes');
+    let holeValue = document.querySelectorAll('.holes');
     return holeValue[num - 1];
 }
 function changeHolesColor(tag, sound, changeColor) {
     let parentTag = tag.parentNode;
-    if(changeColor) {
-        parentTag.classList = sound;
-    } else {
-        parentTag.classList = "";
-    }
+    if(changeColor) parentTag.classList = sound;
+    else            parentTag.classList = "";
 }
 function lastTyping(text) {
-    const lastTyping = document.getElementById('lastTyping');
-    lastTyping.textContent = text;
+    lastType.textContent = text;
 }
 function playSound(value, sound) {
     audioPlay(value);
-    const hole = getIndexOfHole(value);
+    let hole = getIndexOfHole(value);
     changeHolesColor(hole, sound, true);
     lastTyping(sound);
 }
 function stopSound(value, sound) {
-    changeHolesColor(getIndexOfHole(value), sound, false);
+    let hole = getIndexOfHole(value);
+    changeHolesColor(hole, sound, false);
 }
 document.body.onkeydown = () => {
     const key = window.event.keyCode;
