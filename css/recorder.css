@@ -24,7 +24,7 @@ body {
 #source {
     font-size: 5px;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
 }
 #lastTyping {
@@ -33,6 +33,7 @@ body {
     font-size: 25px;
 }
 #mainHole {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,18 +43,20 @@ body {
 .holes {
     width: 40px;
     height: 40px;
-    border: 0;
     padding: 0;
     margin: 0;
+    border: 0;
 }
 .holesButton {
     width: 40px;
     height: 40px;
-    border: 0;
     padding: 0;
     margin: 0;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    background-color: #dddddd;
 }
-.do .holes button {
+.lowDo .holes button {
     background-color: red !important;
 }
 .re .holes button {
@@ -101,7 +104,12 @@ body {
 .ti .holes:nth-child(7) button {
     background-color: red !important;
 }
-.la .holes:nth-child(8) button,
-.doo .holes:nth-child(6) button {
+.highDo .holes:nth-child(8) button,
+.highDo .holes:nth-child(6) button {
     background-color: red !important;
+}
+.lastHole {
+    position: absolute;
+    top: 60px;
+    right: 40px;
 }
